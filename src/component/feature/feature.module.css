@@ -1,0 +1,33 @@
+.features {
+  padding: 50px 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.featuresContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.featureCard {
+  background: blueviolet;
+  padding: 20px;
+  width: 250px;
+  margin: 10px;
+  border-radius: 8px;
+  border: 4px solid rgb(92, 43, 92);
+}
+
+.featureCard:hover {
+background-color: darkred;
+}
+.icon{color: blueviolet;}
+.featureCard span {
+  font-size: 40px;
+}
+
+.featureCard h3 {
+  margin-top: 10px;
+  font-size: 20px;
+}

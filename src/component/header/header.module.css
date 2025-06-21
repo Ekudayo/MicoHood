@@ -1,0 +1,74 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgb(43, 8, 76);
+  color: white;
+  position: relative;
+  flex-wrap: wrap; /* allow wrapping when mobile menu appears */
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+}
+
+.menuIcon {
+  display: none !important;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Mobile dropdown container centered inside header */
+.navLinksMobileContainer {
+  flex-basis: 100%;
+  order: 1;
+  text-align: center;
+
+  /* animation setup */
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+}
+
+.navLinksMobile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* background: #444; */
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px auto;
+  width: 80%;
+}
+
+.navLinksMobile a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Show mobile nav when active */
+.navLinksMobileContainer.active {
+  max-height: 500px; 
+}
+
+/* Responsive rules */
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
+
+  .menuIcon {
+    display: block !important;
+  }
+}
