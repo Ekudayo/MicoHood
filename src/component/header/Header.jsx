@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <header className={styles.navbar}>
-      <h1 className={styles.logo}>Micotech</h1>
+      <h1 className={styles.logo}>MicoHood</h1>
 
       {/* Desktop Navigation */}
       <nav className={styles.navLinks}>
